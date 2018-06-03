@@ -1,0 +1,18 @@
+{
+  "name": "ongoing_support_plese",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This can save time and effort to send 'Noted' politly on Google Hangout.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+         "matches": ["https://hangouts.google.com/*"],
+         "js": ["jquery-3.3.1.min.js", "script.js"]
+    }
+  ],
+  "permissions": ["https://hangouts.google.com/*"]
+}
